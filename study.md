@@ -38,7 +38,14 @@ As it makes sense to you please write the following in JSON format:
 -   Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+{
+  "Jason":{
+            "cat": "mr.kitty",
+            "roommates": ["dave", "miller"],
+            "sports": ["red sox", "patriots", "bruins"],
+            "lived": ["123 fake street", "2 muchinfo road"]
+          }
+}
 ```
 
 I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +53,25 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+{
+  "Jason":{
+            "cat": "mr.kitty",
+            "roommates": [
+                            {
+                              "dave" :  {
+                                          "goldfish": [
+                                                        {"bob":"red"},
+                                                        {"mr.magicnibbles": ["yellow", "bites a bit"]}
+                                                      ]
+
+                                         }
+                            }
+                            "miller"
+                         ],
+            "sports": ["red sox", "patriots", "bruins"],
+            "lived": ["123 fake street", "2 muchinfo road"]
+          }
+}
 ```
 
 ## JSON Methods
@@ -54,7 +79,7 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+no, JSON is string only so no methods allow.
 ```
 
 ## JSON Comments
@@ -62,5 +87,5 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+No, once again JSON is string only and comments can mess it up!
 ```
